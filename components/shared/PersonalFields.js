@@ -108,7 +108,7 @@ export default function PersonalFields(props) {
     if (props?.succesForm)
       setTimeout(() => {
         window.location.replace(
-          "https://cosmedica.com/hair-transplant-in-turkey-lp-uk"
+          "https://cosmedica.com/hair-transplant-in-turkey-lp-au"
         );
       }, 1500);
   }, [props.succesForm]);
@@ -143,7 +143,7 @@ export default function PersonalFields(props) {
                       {
                         ...props.state,
                         ...values,
-                        lead_source: "drleventacar.fr",
+                        lead_source: "LP AU",
                       },
                     ],
                   },
@@ -332,8 +332,11 @@ export default function PersonalFields(props) {
                     <p className="input__form_title">{t("form.mobile")}</p>
                     <PhoneInput
                       containerClass={"wrapper_input__form"}
+                      style={{
+                        zIndex: "30",
+                      }}
                       name="phone"
-                      country={"fr"}
+                      country={"au"}
                       value={values.phone}
                       onChange={(e) => {
                         setFieldValue("phone", e);
